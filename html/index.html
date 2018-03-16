@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Oozeball Home - Alpha Nu Chapter of Phi Kappa Sigma</title>
+		<link rel="stylesheet" type="text/css" href="css/master.css" />
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/fadeslideshow.js"></script>
+		<script type="text/javascript">
+		var mygallery=new fadeSlideShow({
+			wrapperid: "homeshow", //ID of blank DIV on page to house Slideshow
+			dimensions: [800, 250], //width/height of gallery in pixels. Should reflect dimensions of largest image
+			imagearray: [
+				["images/home/header2.jpg"],
+				["images/home/header3.jpg"],
+				["images/home/header4.jpg"] //no trailing comma after very last image element!
+			],
+			displaymode: {type:'auto', pause:3000, cycles:0, wraparound:false, randomize:true},
+			persist: false, //remember last viewed slide and recall within same session?
+			fadeduration: 500, //transition duration (milliseconds)
+			descreveal: "ondemand",
+			togglerid: ""
+		})
+		</script>
+		
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<body>
+		<div id="content">
+			<div id="header">
+				<img src="images/oozeball_logo.png" alt="Oozeball" title="Oozeball" />
+				<div id="logos">
+					<a href="http://www.gtskulls.org" target="_blank"><img style="width: 234px;" src="images/pks_logo.png" alt="Alpha Nu Chapter of Phi Kappa Sigma" title="Alpha Nu Chapter of Phi Kappa Sigma" /></a>
+					<br />
+					<a href="http://www.lls.org" target="_blank"><img style="width: 234px; padding-top: 5px;" src="images/lls_logo.png" alt="Leukemia and Lymphoma Society" title="Leukemia and Lymphoma Society" /></a>
+				</div>
+			</div>
+			<div id="navigation">
+				<div class="topbar"></div>
+				<ul class="claybricks">
+					<li><a class="selected" href="index.html">Home</a></li>
+					<li><a href="about.php">What is Oozeball?</a></li>
+					<li><a href="photo.php">Photo Gallery</a></li>
+					<li><a href="sponsor.php">Sponsors</a></li>
+					<li><a href="eventinfo.php">This Years Event</a></li>
+					<li><a href="teams.php">Teams</a></li>
+				</ul>
+			</div>
+			<div id="body">
+				<div id="homeshow"></div>
+				<div id="outerBox">
+					<p style="font-size: 22px; margin: 10px 0 10px 20px">News &amp; Updates</p>
+					<div id="innerBox" class="nonTeams">
+						<h1>Welcome to the New Oozeball Site!</h1>
+						<p class="postinfo">Written by Chris Monaco | Thursday, Feb. 16, 2012</p>
+						<p>Preparations for Oozeball 2012 are underway, and what time would be better to unveil the new Oozeball Website?! This is your source for everything regarding the Alpha Nu Chapter of Phi Kappa Sigma's biggest Philanthtopy event. So have a look around and find out what exactly Oozeball is. And when you're ready to participate, head over to the Teams page and sign up!</p> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p>&copy; 2011 The Alpha Nu Chapter of Phi Kappa Sigma. All rights reserved.</p>
+		</div>
+	</body>
+</html>

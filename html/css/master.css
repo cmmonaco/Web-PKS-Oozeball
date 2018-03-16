@@ -1,0 +1,321 @@
+/* Master CSS for Oozeball Website */
+body {
+	background: #EBD7B2 url('../images/background_top.png') repeat-x right top;
+	text-align: center;
+	margin: 0;
+	background-attachment: fixed;
+	font-family: arial, sans-serif;
+	padding: 0;
+}
+
+#content {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: left;
+	height: auto;
+	box-shadow: 0px 0px 20px #000; /* implement in other browsers */
+	background-color: #EBD7B2;
+	display: inline-block;
+}
+
+/* Header Styling */
+#header {
+	background: url('../images/header_back.png') repeat-x;
+	height: 160px;
+	position: relative;
+	z-index: 1;
+	overflow: visible;
+}
+
+#header img {
+	float: left;
+	border: 0;
+}
+
+#logos {
+	position: absolute;
+	right: 0;
+	margin-right: 20px;
+	width: 234px;
+}
+
+/* Navigation Styling */
+#navigation {
+	width: 100%;
+	height: auto;
+	z-index: 0;
+}
+
+div.topbar { /* bar that runs across the top of the menu */
+	height: 16px;
+	background-color: #8B4513;
+}
+
+ul.claybricks { /* main menu UL */
+	font-weight: bold;
+	width: 100%;
+	background-color: #DEB887;
+	padding: 6px 0 6px 0; /* padding of the 4 sides of the menu */
+	margin: 0;
+	text-align: left; /* set value to "left", "center", or "right" to align menu accordingly */
+	border-bottom: 1px solid #8B4513;
+}
+
+ul.claybricks li {
+	display: inline;
+}
+
+ul.claybricks li a {
+	color:black;
+	padding: 6px 8px 4px 8px; /* padding of the 4 sides of each menu link */
+	margin-right: 20px; /* spacing between each menu link */
+	text-decoration: none;
+	font-family: arial, sans-serif;
+}
+
+ul.claybricks li a:hover, ul.claybricks li a.selected {
+	color: white;
+	background: #5d4137;
+	background: -moz-linear-gradient(top, #5d4137 0%, #41251b 12%, #2c0f05 100%); /* moz syntax for CSS3 gradient */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5d4137), color-stop(12%,#41251b), color-stop(100%,#2c0f05));
+	background: -webkit-linear-gradient(top, #5d4137 0%,#41251b 12%,#2c0f05 100%); /* webkit syntax for CSS3 gradient */
+	background: -o-linear-gradient(top, #5d4137 0%,#41251b 12%,#2c0f05 100%); /* opera syntax for CSS3 gradient */
+	background: -ms-linear-gradient(top, #5d4137 0%,#41251b 12%,#2c0f05 100%);
+	background: linear-gradient(top, #5d4137 0%,#41251b 12%,#2c0f05 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d4137', endColorstr='#2c0f05',GradientType=0 );
+	-moz-box-shadow: 0 0 5px #595959; /* moz syntax for CSS3 box shadows */
+	-webkit-box-shadow: 0 0 5px #595959;
+	box-shadow: 0 0 5px #595959;
+	padding-top: 17px; /* large padding to get menu item to protrude upwards */
+	padding-bottom: 7px;
+}
+
+/* Div Body Styling */
+#body {
+	padding-bottom: 10px;
+	float: left;
+	width: 100%;
+}
+
+#homeshow {
+	margin: 0 auto;
+	margin-top: 20px;
+	box-shadow: 0px 0px 20px #000;
+}
+
+/*************
+* TEAMS PAGE
+*************/
+#outerBox {
+	background-color: #573822;
+	color: white;
+	border-radius: 10px 10px 10px 10px;
+	margin: 10px 40px;
+	border: 5px solid white;
+	position: relative;
+	float: left;
+	width: 910px;
+}
+
+#innerBox {
+	margin: 0 10px 44px 10px;
+	padding-bottom: 10px;
+	color: white;
+	background-color: #CD853F;
+	border-radius: 10px 10px 10px 10px;
+	border: 5px solid white;
+	float: left;
+	width: 880px;
+}
+
+#innerBox p {
+	float: left;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+#innerBox form {
+	float: left;
+	margin-top: 12px;
+}
+
+#innerBox th {
+	border-bottom: 1px solid black;
+}
+
+#innerBox table {
+	margin: 0 auto;
+}
+
+#innerBox h2 {
+	float: left;
+	margin: 20px 0px 0px 20px;
+	text-decoration: underline;
+	font-weight: normal;
+	width: 100%;
+}
+
+div.fieldwrapper{ /*field row DIV (includes two columns- Styled label column and 'thefield' column)*/
+width: 550px; /*width of form rows*/
+overflow: hidden;
+padding: 5px 0;
+}
+
+div.fieldwrapper label.styled{ /* label elements that should be styled (left column within fieldwrapper DIV) */
+float: left;
+width: 200px; /*width of label (left column)*/
+text-transform: uppercase;
+border-bottom: 1px solid #A52A2A;
+margin-right: 15px; /*spacing with right column*/
+font-size: 12px;
+font-weight: bold;
+}
+
+div.fieldwrapper div.thefield{ /* DIV that wraps around the actual form fields (right column within fieldwrapper DIV) */
+float: left;
+margin-bottom: 10px; /* space following the field */
+}
+
+div.fieldwrapper div.thefield input[type="text"]{ /* style for INPUT type="text" fields. Has no effect in IE7 or below! */
+width: 250px;
+}
+
+div.fieldwrapper div.thefield textarea{ /* style for TEXTAREA fields. */
+width: 300px;
+height: 150px;
+}
+
+div.fieldwrapper div.thefield select{
+	margin: 0;
+}
+
+div.buttonsdiv{ /*div that wraps around the submit/reset buttons*/
+margin-top: 5px; /*space above buttonsdiv*/
+}
+
+div.buttonsdiv input{ /* style for INPUT fields within 'buttonsdiv'. Assumed to be form buttons. */
+width: 80px;
+background: #e1dfe0;
+}
+
+/*******************************
+* General Page Content Styling
+*******************************/
+#innerBox h1
+{
+	font-size: 20px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+#innerBox.nonTeams
+{
+	margin-bottom: 10px;
+	color: black;
+}
+
+#innerBox hr
+{
+	color: black;
+	width: 860px;
+	margin-top: 0px;
+}
+
+#innerBox img
+{
+	border: 0;
+}
+
+#sponsorBox
+{
+	width: 860px;
+	margin: 0 10px 20px 10px;
+	text-align: center;
+}
+
+#sponsorBox.platinum img
+{
+	height: 160px;
+}
+
+#sponsorBox.gold img
+{
+	height: 130px;
+}
+
+#sponsorBox.silver img
+{
+	height: 100px;
+}
+
+#sponsorBox.bronze img
+{
+	height: 80px;
+}
+
+p.postinfo
+{
+	font-size: x-small;
+	font-style: italic;
+	margin: 0;
+}
+
+/* Gallery Stuff */
+#thumbnail
+{
+	float: left;
+	margin: 10px;
+	width: 180px;
+	text-align: center;
+}
+
+#thumbnail a
+{
+	color: white;
+}
+
+#thumbnail a img
+{
+	border: 0px;
+}
+
+.pic{
+	float:left;
+	margin: 5px;
+	border:5px solid white;
+	width:200px;
+	height:250px;
+}
+
+.pic a{
+	width:200px;
+	height:250px;
+	text-indent:-99999px;
+	display:block;
+}
+
+/* this years event */
+#infoBox
+{
+	border: 4px ridge brown;
+    float: right;
+    height: 200px;
+    margin: 20px 20px 0 0;
+    width: 270px;
+	color: black;
+	background-color: #EBD7B2;
+}
+
+#infoBox ul
+{
+	list-style-type: none;
+	margin: 0;
+}
+
+#faqAnswers h2
+{
+	text-decoration: underline;
+}
+
+
